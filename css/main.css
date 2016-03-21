@@ -280,6 +280,10 @@ textarea {
     }
 }
 
+.container-fluid {
+  font-family: 'Old Standard TT', serif;
+  text-align: center;
+}
 
 .jumbotron {
 padding-left: 25px;
@@ -287,7 +291,6 @@ padding-right: 25px;
 padding-top: 5px;
 padding-bottom: 5px;
 background-color: transparent;
-font-family: 'Old Standard TT', serif;
 }
 /* NOTE: font alternative ideas
   font-family: 'Raleway', sans-serif;
@@ -295,14 +298,24 @@ font-family: 'Old Standard TT', serif;
 
 .navbar {
   background-color: transparent;
-  font-family: 'Old Standard TT', serif;
 }
 
-h1 {
-text-align: center;
-}
+
 
 #intro {
-text-align: center;
-padding: 25px; 
+padding: 25px;
+}
+
+#cookie {
+width: 100px;
+height: 100px;
+background-color: transparent;
+}
+
+#aboutusheader {
+  font-size: 24px;
+}
+
+#aboutusp {
+  font-size: 20px;
 }
