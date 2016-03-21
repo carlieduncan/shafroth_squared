@@ -297,3 +297,12 @@ font-family: 'Old Standard TT', serif;
   background-color: transparent;
   font-family: 'Old Standard TT', serif;
 }
+
+h1 {
+text-align: center;
+}
+
+#intro {
+text-align: center;
+padding: 25px; 
+}
