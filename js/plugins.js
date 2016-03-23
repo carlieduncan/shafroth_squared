@@ -23,10 +23,11 @@
 
 // Place any jQuery/helper plugins in here.
 
-<script src="https://github.com/1000hz/bootstrap-validator.git"</script>
+<script src="https://github.com/1000hz/bootstrap-validator.git"></script>
 
 
-$('body').scrollspy({ target: '#navbar-example'})
+$('body').scrollspy({ target: '#navbar-example', offset:65})
+
 
 $('#myTabs a').click(function (e) {
   e.preventDefault()
