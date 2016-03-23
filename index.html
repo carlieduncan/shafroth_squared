@@ -46,27 +46,13 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#"> ABOUT <span class="sr-only">(current)</span></a></li>
-            <li><a href="#"> SERVICES </a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> PORTFOLIO <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Portfolio 1</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Portfolio 2</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Portfolio 3</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Portfolio 4</a></li>
-              </ul>
-            </li>
+            <li class="active"><a href="#about"> ABOUT <span class="sr-only">(current)</span></a></li>
+            <li><a href="#services"> SERVICES </a></li>
+            <li><a href="#portfolio"> PORTFOLIO </a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"> CONTACT US </a></li>
+              <li><a href="#contact"> CONTACT US </a></li>
           </ul>
-
-
-        </div><!-- /.navbar-collapse -->
       </div>
     </nav>
 
@@ -84,76 +70,78 @@
           <img src="img/chocolate_chip.png" alt="responsive img cookie" class="img-responsive center-block" id="cookie"/>
     </div>
 <div class="col-md-8 col-md-offset-2">
-  <h3> ABOUT US
+  <div id="about">
+    <h3> ABOUT US
+    <br>
+      <small> Carlie & Will Shafroth </small> </h3>
   <br>
-    <small> Carlie & Will Shafroth </small> </h3>
-<br>
-    <p> Carlie and Will Shafroth are wife and husband team. They combine their skills and talents to great effect. They have a passion for working with others. COMMUNICATION PLACE HOLDER. They are lovebirds, and posses many proprietary sounds that only they understand. </p>
-  <br><br>
-  <ul>
-    <li> communication </li>
-    <li> experience </li>
-    <li> understand the needs of others </li>
-    <li> reliable and solid </li>
-  </ul>
-</div>
-
-<br> <br>
-
-<div class="col-md-8 col-md-offset-2">
-  <h3> SERVICES </h3>
-<br>
+      <p> Carlie and Will Shafroth are wife and husband team. They combine their skills and talents to great effect. They have a passion for working with others. COMMUNICATION PLACE HOLDER. They are lovebirds, and posses many proprietary sounds that only they understand. </p>
+    <br><br>
     <ul>
-      <li> Build and Maintain Websites </li>
-      <li> Marketing </li>
-      <li> SEO </li>
-      <li> Data Anyalytics </li>
-      <li> Branding </li>
+      <li> communication </li>
+      <li> experience </li>
+      <li> understand the needs of others </li>
+      <li> reliable and solid </li>
     </ul>
+  </div>
 </div>
 
 <br> <br>
 
 <div class="col-md-8 col-md-offset-2">
-  <h3> PORTFOLIO </h3>
-<br>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+  <div id="services">
+    <h3> SERVICES </h3>
+  <br>
+      <ul>
+        <li> Build and Maintain Websites </li>
+        <li> Marketing </li>
+        <li> SEO </li>
+        <li> Data Anyalytics </li>
+        <li> Branding </li>
+      </ul>
+    </div>
 </div>
 
 <br> <br>
 
 <div class="col-md-8 col-md-offset-2">
-  <h3> CONTACT US </h3>
-<br><br>
-
-
-<!-- NOTE:  CONTACT FORM TRIAL code -->
-<div class="container">
-  <form id="contact" action="" method="post">
-    <h3>Quick Contact</h3>
-    <h4>Contact us today, and get reply with in 24 hours!</h4>
-    <fieldset>
-      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-    </fieldset>
-
-    <fieldset>
-      <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    </fieldset>
-  </form>
-
-
+  <div id="portfolio">
+      <h3> PORTFOLIO </h3>
+  <br>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
 </div>
+
+<br> <br>
+
+<div class="col-md-8 col-md-offset-2">
+  <div id="contact">
+    <h3> CONTACT US </h3>
+  <br>
+
+  <div class="row">
+              <div class="form-group col-sm-6">
+                  <label for="name" class="h4">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                  <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-sm-6">
+                  <label for="email" class="h4">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                  <div class="help-block with-errors"></div>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="message" class="h4 ">Message</label>
+              <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+          </div>
+          <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+  <div id="msgSubmit" class="h3 text-center hidden"></div>
+
+    </div>
+  </div>
 
 </div>
 
