@@ -366,10 +366,12 @@ body {
 	position:relative;
 }
 
+/* NOTE: moved contact button left */
 ul.nav.navbar-nav.navbar-right {
 margin-right: 50px;
 }
 
+/* NOTE: allows navbar to jump to appropriate section */
 *[id]:before {
   display: block;
   content: " ";
