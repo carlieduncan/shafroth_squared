@@ -20,7 +20,8 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
     </head>
-    <body>
+
+<body data-spy="scroll" data-target="#navbar-example" data-offset="0">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -30,6 +31,8 @@
 <div class="container-fluid">
 
 <div class="row">
+
+  <div id="navbar-example">
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -45,7 +48,8 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+
+          <ul class="nav navbar-nav role="tablist"">
             <li class="active"><a href="#about"> ABOUT <span class="sr-only">(current)</span></a></li>
             <li><a href="#services"> SERVICES </a></li>
             <li><a href="#portfolio"> PORTFOLIO </a></li>
@@ -53,8 +57,12 @@
           <ul class="nav navbar-nav navbar-right">
               <li><a href="#contact"> CONTACT US </a></li>
           </ul>
+
+
+
       </div>
     </nav>
+  </div>
 
 <div class="jumbotron">
   <div class="page-header">
@@ -69,6 +77,7 @@
 
           <img src="img/chocolate_chip.png" alt="responsive img cookie" class="img-responsive center-block" id="cookie"/>
     </div>
+
 <div class="col-md-8 col-md-offset-2">
   <div id="about">
     <h3> ABOUT US
