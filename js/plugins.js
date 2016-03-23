@@ -26,7 +26,7 @@
 <script src="https://github.com/1000hz/bootstrap-validator.git"></script>
 
 
-$('body').scrollspy({ target: '#navbar-example', offset:65})
+$('body').scrollspy({ target: '#navbar-example'})
 
 
 $('#myTabs a').click(function (e) {
