@@ -1,8 +1,7 @@
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
 
   $("#contactForm").validator().on("submit", function (event) {
       if (event.isDefaultPrevented()) {
+        formError();
         submitMSG(false, "Did you fill in the form properly?");
         }
     else {
@@ -21,7 +20,8 @@
 
 $.ajax({
       type: "POST",
-      url: "php/form-process.php",
+      url: "php/process.php",
+      // NOTE: changed from form-process.php and changed to process.php
       data: "name=" + name + "&email=" + email + "&message=" + message,
       success : function(text){
           if (text == "success"){
@@ -40,6 +40,12 @@ function formSuccess(){
   submitMSG(true, "Message Submitted!");
 }
 
+
+function formError(){
+    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).removeClass();
+    });
+}
 
 
 function submitMSG(valid, msg){
