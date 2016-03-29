@@ -1,15 +1,14 @@
-
-  $("#contactForm").validator().on("submit", function (event) {
-      if (event.isDefaultPrevented()) {
+$("#contactForm").validator().on("submit", function (event) {
+    if (event.isDefaultPrevented()) {
+        // handle the invalid form...
         formError();
         submitMSG(false, "Did you fill in the form properly?");
-        }
-    else {
-          // everything looks good!
-          event.preventDefault();
-          submitForm();
-      }
-  });
+    } else {
+        // everything looks good!
+        event.preventDefault();
+        submitForm();
+    }
+});
 
   function submitForm(){
     // Initiate Variables With Form Content
@@ -20,8 +19,7 @@
 
 $.ajax({
       type: "POST",
-      url: "php/process.php",
-      // NOTE: changed from form-process.php and changed to process.php
+      url: "php/form-process.php",
       data: "name=" + name + "&email=" + email + "&message=" + message,
       success : function(text){
           if (text == "success"){
